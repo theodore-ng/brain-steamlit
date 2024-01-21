@@ -1,5 +1,4 @@
 import streamlit as st
-from clf import ImageClassifier
 from PIL import Image
 import requests
 import json
