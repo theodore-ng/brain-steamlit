@@ -4,7 +4,7 @@ import requests
 import json
 from config import URL, HEADERS, DATA
 
-st.set_option("deprecation.showfileUploaderEncoding", False)
+# st.set_option("deprecation.showfileUploaderEncoding", False)
 
 st.title("ViT-GPT2 model demo by Tidrael")
 st.write("")
