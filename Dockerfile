@@ -9,4 +9,4 @@ ENV FLASK_APP=app.py
 
 EXPOSE 8501
 
-CMD exec python -m streamlit run app.py
+CMD exec python -m streamlit run streamlit_app.py
