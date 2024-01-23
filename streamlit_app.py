@@ -1,9 +1,6 @@
 import streamlit as st
-from PIL import Image
 import requests
-import json
 import cv2
-from io import StringIO
 import numpy as np
 from config import URL, HEADERS
 from config import DATA

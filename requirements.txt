@@ -2,3 +2,4 @@
 pillow
 streamlit
 requests
+opencv-python
