@@ -1,4 +1,5 @@
 import cv2
+from config import LABEL_DICTS
 
 def bbox_convert(results):
     bboxes = []
@@ -7,9 +8,10 @@ def bbox_convert(results):
         x_max = round(640 * (result["xcenter"] + result["width"] / 2))
         y_min = round(640 * (result["ycenter"] - result["height"] / 2))
         y_max = round(640 * (result["ycenter"] + result["height"] / 2))
+        bbox_label = LABEL_DICTS[result["class"]]
         bbox_dict = {
             "bbox": [x_min, y_min, x_max, y_max],
-            "label": result["class"]
+            "label": bbox_label
         }
         bboxes.append(bbox_dict)
     return bboxes

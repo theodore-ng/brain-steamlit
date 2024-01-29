@@ -28,6 +28,7 @@ if uploaded_file is not None:
     # with st.spinner("Predict..."):
         # Read the results
     results = response.json()["data"]
+    st.write(results)
     bboxes = bbox_convert(results)
     
     # Draw bbox
